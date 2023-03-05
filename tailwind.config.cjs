@@ -4,7 +4,11 @@ const draculaThemePlugin = require('tailwind-dracula')();
 module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        darkest: '#21222c',
+      }
+    },
   },
   plugins: [draculaThemePlugin],
 };
